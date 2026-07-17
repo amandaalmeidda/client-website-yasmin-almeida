@@ -15,6 +15,12 @@
 <meta name="ext-resource-dependency" content="assets/aylas-anatomy.png" data-resource-id="brandAnatomy" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  window.__resources = {};
+  document.querySelectorAll('meta[name="ext-resource-dependency"]').forEach(function (m) {
+    window.__resources[m.dataset.resourceId] = m.getAttribute('content');
+  });
+</script>
 <script src="./support.js"></script>
 </head>
 <body>
